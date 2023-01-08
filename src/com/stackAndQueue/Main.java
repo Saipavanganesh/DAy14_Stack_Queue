@@ -6,9 +6,13 @@ public class Main {
         System.out.println("Welcome to Stack");
         System.out.println();
         Queue queue = new Queue();
+        queue.dequeue();
         queue.enqueue(56);
         queue.enqueue(30);
         queue.enqueue(70);
+        queue.display();
+        queue.dequeue();
+        queue.dequeue();
         queue.display();
     }
 }

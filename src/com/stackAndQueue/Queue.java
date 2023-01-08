@@ -18,6 +18,17 @@ public class Queue {
             rear = node;
         }
     }
+
+    /* Dequeue */
+    public void dequeue(){
+        if(front == null && rear == null){
+            System.out.println("Queue is empty");
+        }
+        else{
+            front = front.next;
+        }
+    }
+
     /* Display in Queue */
     public void display(){
         Node temp = front;
